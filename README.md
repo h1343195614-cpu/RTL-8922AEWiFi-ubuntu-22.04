@@ -5,8 +5,6 @@
 ## 目录
 
 ```text
-docs/
-  GPU工作站安装与验证教程.pdf
   RTL8922AE_WiFi驱动编译安装教程.pdf
   WiFi驱动编译资料_README.txt
 
