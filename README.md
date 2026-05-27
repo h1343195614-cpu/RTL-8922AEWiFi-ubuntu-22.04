@@ -21,19 +21,6 @@ packages/
 
 详细安装和验证教程见：
 
-```text
-docs/GPU工作站安装与验证教程.pdf
-```
-
-内容包含：
-
-- NVIDIA Driver / CUDA Toolkit
-- cuDNN / NCCL / TensorRT
-- Docker / Docker Compose / NVIDIA Container Toolkit
-- Miniconda / PyTorch GPU / JupyterLab
-- CUDA Samples 编译验证
-- 基础编译工具和科学计算库
-
 ## RTL8922AE WiFi 驱动
 
 详细教程见：
@@ -66,7 +53,6 @@ scp packages/rtw89-main.zip ubuntu@192.168.1.46:/home/ubuntu/workspace/
 登录服务器并执行：
 
 ```bash
-ssh ubuntu@192.168.1.46
 bash /home/ubuntu/workspace/RTL8922AE_WiFi_编译安装脚本.sh
 ```
 
@@ -87,16 +73,6 @@ Kernel driver in use: rtw89_8922ae_git
 wlp7s0
 能扫描到 WiFi 名称
 ```
-
-## 适用环境
-
-本次验证环境：
-
-- Ubuntu 22.04.5 LTS
-- Kernel 6.8.0-40-generic
-- ASUS PRIME X870-P WIFI
-- Realtek RTL8922AE / PCI ID `10ec:8922`
-- NVIDIA GeForce RTX 4090
 
 ## 注意
 
