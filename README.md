@@ -2,14 +2,9 @@
 
 这个仓库整理了本次 Ubuntu 22.04 GPU 工作站环境安装验证资料，以及 ASUS PRIME X870-P WIFI 主板 Realtek RTL8922AE 无线网卡驱动的编译安装资料。
 
-## 目录
-
-```text
-  RTL8922AE_WiFi驱动编译安装教程.pdf
-  WiFi驱动编译资料_README.txt
 
 scripts/
-  RTL8922AE_WiFi_编译安装脚本.sh
+  RTL8922AE_WiFi.sh
 
 packages/
   rtw89-main.zip
@@ -23,14 +18,10 @@ packages/
 
 详细教程见：
 
-```text
-docs/RTL8922AE_WiFi驱动编译安装教程.pdf
-```
-
 一键脚本：
 
 ```text
-scripts/RTL8922AE_WiFi_编译安装脚本.sh
+scripts/RTL8922AE_WiFi.sh
 ```
 
 源码包：
@@ -44,14 +35,14 @@ packages/rtw89-main.zip
 把脚本和源码包上传到服务器：
 
 ```bash
-scp scripts/RTL8922AE_WiFi_编译安装脚本.sh ubuntu@192.168.1.46:/home/ubuntu/workspace/
-scp packages/rtw89-main.zip ubuntu@192.168.1.46:/home/ubuntu/workspace/
+#指定这个目录，不然脚本使用不了，会自己重新下载包
+/home/ubuntu/workspace/
 ```
 
 登录服务器并执行：
 
 ```bash
-bash /home/ubuntu/workspace/RTL8922AE_WiFi_编译安装脚本.sh
+bash /home/ubuntu/workspace/RTL8922AE_WiFi.sh
 ```
 
 成功标志：
